@@ -1,48 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: solid 0.2px; */
 }
 
 header{
     width: 100%;
-    height: 85vh;
+    height: 49vw;
+
+    background-image: url('img/background-frida.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+/* ---------------Frida----------------- */
 
 .frida-container{
     width: 100%;
-    /* padding: 2%; */
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #ff9e9e;
+    background-color: #ffa65ef5;    
 }
 .navegation{
-    width: 80%;
+    width: 20.7%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.frida-img{
-    width: 70%;
-}
-
-.frida-list{
+.frida-logo{
     width: 100%;
+}
+.frida-list{
+    width: 50%;
     height: 100%;
     
-   /*  background-color: tomato; */
     
 }
-.busca{
-    width: 100%;
- /*    border: solid 2px; */
-}
-.lupa-busca{
-    width: 6%;
-}
+
+/* ------------------Nav-------------------- */
+
 
 nav{
     width: 100%;
@@ -61,49 +60,171 @@ li{
     /* background-color: slateblue; */
     width: 35%;
     padding: 3% 0;
+    font-size: 1.5vw;
     text-align: center;
     text-decoration: none;
     list-style: none;
+    position: relative;
+    z-index:2;
 }
-.frida{
-    width: 100%;
+li::before{
+    content:'';
+    width: 0%;
     height: 100%;
-    background-color: #F7F7F7;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.kahlo-container{
-    width: 30%;
-    height:85%;
-    /* border: solid 2px;
-    border-radius: 35%;
-    overflow: hidden; */
-    position: relative;  
-}
-
-.frida-box{
-    width: 100%;
-    height: 100%;
-    /* border: solid 2px; */
-    border-radius: 35%;
-    overflow: hidden;
-    position: relative; 
-}
-.kahlo-img{
-    width: 90%;
-    height: 90%;
-}
-.border-bottom{
-    width: 90%;
+    background-color: #fffffff3;
+    z-index:-1;
+    transition: all .5s ease;
     position: absolute;
-    top: 57%;
-    right: 13%;
-    transform: rotate(180deg);
+    top: 0;
+    left: 0;
+    
+}
+li:hover::before{
+
+    width: 100%;
+    color: black;
+
+}
+
+/* ----------------Frida------------------- */
+
+.frida{
+    width: 95%;
+    height: 90%;
+
+    position:relative;
+    left:5%;
+    top: 1%;
+
+}
+/* 
+.frida-title{
+    width: 38%;
+    padding:2% 0 0% 2%;
+    border-radius: 1vw 1vw 0 0 ;
+    font-size: 1.5vw;
+
+    background-color: #ffba81;
+    background-color: #fffffee0;
+     padding: 15% 0 10% 0; 
+} 
+*/
+.space-frida{
+   
+}
+.frida-box{
+    width: 45%;
+    height: 100%;
+    padding: 3% 0% 0 5%;
+    overflow: hidden;
+    animation: forwards 2.5s slideFrida;
+    animation-delay: 0.5s;
+    opacity: 0%;
+}
+
+
+.frida-img{
+    width:100%;
+    height: 100%;
+}
+
+@keyframes slideFrida {
+    from{
+        opacity: 0%;
+        transform: translateY(15%) ;
+    }
+    to{
+        opacity: 100%;
+        transform: translateY(0%) ;
+
+    }
+}
+
+/* ------------History the Frida---------- */
+
+main{
+    width: 100%;
+    height:100%;
+}
+.frida-history{
+    width: 100%;
+    text-align: center;
+    
+    background: #ff9a47;
+    position: relative;
+}
+.history-text{
+    width: 30.1%;
+    padding: 0% 3%;
+
+    background-color:#ff9a47;
+    background-color: whitesmoke;
+    border-radius: 2.5vw 0;
+
+    position: absolute;
+    left: 56.2%;
+    bottom:55%;
+    z-index:4;
+
 }
 
 .frida-title{
-    width: 20%;
-    font-size: 3.5vw;
+
+    width: 100%;
+    padding: 25% 3% 10% 3%;
+    
+    font-family:'Oswald', sans-serif;
+    font-size: 6vw;
+
+    
+    background-color:#ff9a47;
+    background-color: whitesmoke;
+  
+    color:whitesmoke;
+    color: #ff9a47;
+/*
+    border-radius: 2vw 2vw  0 0 ;
+
+    
+    text-shadow:1vw 1vh 1vw #000000;
+    border-bottom: solid;
+    border-top: solid; */
+}
+
+@keyframes slideHist {
+    from{
+        opacity: 0%;
+        transform: translateX(15%) ;
+    }
+    to{
+        opacity: 100%;
+        transform: translateX(0%) ;
+
+    }
+}
+
+
+
+
+h1{
+    text-decoration: underline;
+    animation: forwards 1s slideHist;
+    animation-delay: 2s;
+    opacity: 0;
+}
+
+.history-title{
+    padding: 15% 0 3% 0;
+    font-size: 2vw;
+}
+
+.history-text p{
+    font-size: 1.2vw;
+    padding: 3% 0 10%;
+}
+
+.lorem{
+    width: 100%;
+    padding: 20% 0;
+    color: black;
 }

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
 
 *{
     margin: 0;
@@ -71,7 +72,7 @@ li::before{
     content:'';
     width: 0%;
     height: 100%;
-    background-color: #fffffff3;
+    background-color: whitesmoke;
     z-index:-1;
     transition: all .5s ease;
     position: absolute;
@@ -174,21 +175,11 @@ main{
     padding: 25% 3% 10% 3%;
     
     font-family:'Oswald', sans-serif;
-    font-size: 6vw;
-
+    font-size: 8vw;
     
-    background-color:#ff9a47;
     background-color: whitesmoke;
-  
-    color:whitesmoke;
     color: #ff9a47;
-/*
-    border-radius: 2vw 2vw  0 0 ;
 
-    
-    text-shadow:1vw 1vh 1vw #000000;
-    border-bottom: solid;
-    border-top: solid; */
 }
 
 @keyframes slideHist {
@@ -227,4 +218,91 @@ h1{
     width: 100%;
     padding: 20% 0;
     color: black;
+}
+/* ----------curiosity--------- */
+.curiosity{
+    width: 90%;
+    display:flex; 
+    
+    justify-content:flex-start;
+    align-items: flex-end;
+    position:relative;
+}
+
+.curiosity h2{
+    padding:5% 0;
+    font-size: 2.5vw;
+    font-family: 'Yellowtail', cursive;
+    border-top: solid 0.5vh;
+    border-bottom: solid 0.5vh;
+    background-color: whitesmoke;
+    
+}
+
+.container-curiosity{
+    width:50%;
+    margin: 0 0 5% 4% ;
+    padding: 4% 3% 5% 3%;
+    background-color: whitesmoke;
+    border-radius: 0 0 2vw 2vw;
+    
+    display:flex;
+    flex-direction: column;
+    
+}
+
+.nickname{
+    width: 100%;
+    display: flex;
+    
+}
+.nick-box{
+    width:25%;
+    margin-bottom: 3%;
+    position: relative;
+    
+    left: 12%;
+
+}
+.frida-ka{
+    width: 100%;
+    border-radius: 2vw;
+
+}
+.frida-ka:hover{
+    transform: scale(1.2);
+}
+h3{
+    font-family:'Oswald', sans-serif;
+    text-decoration: underline;
+    font-size: 1.5vw;
+    padding:3%;
+}
+
+p{
+    padding: 2% 0 3%;
+    height: 70%;
+}
+
+.fa-container{
+    border-bottom: solid 0.5vh;
+
+}
+/* ----kHLO---- */
+
+.kahlo-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.frida-log{
+    width: 100%;
+    
+}
+
+.navg{
+    width: 25%;
 }

@@ -10,22 +10,19 @@
 header{
     width: 100%;
     height: 49vw;
-
     background-image: url('img/background-frida.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 /* ---------------Frida----------------- */
-
 .frida-container{
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #ffa65ef5;    
+    background-color: #ffa65ef5;  
 }
-.navegation{
+.logo-box{
     width: 20.7%;
     display: flex;
     justify-content: center;
@@ -34,16 +31,11 @@ header{
 .frida-logo{
     width: 100%;
 }
+/* ------------------Nav-------------------- */
 .frida-list{
     width: 50%;
-    height: 100%;
-    
-    
+    height: 100%;   
 }
-
-/* ------------------Nav-------------------- */
-
-
 nav{
     width: 100%;
     height: 100%;
@@ -59,8 +51,9 @@ ul{
 }
 li{
     /* background-color: slateblue; */
-    width: 35%;
-    padding: 3% 0;
+    width: 100%;
+    height: 100%;
+    padding: 12% 0;
     font-size: 1.5vw;
     text-align: center;
     text-decoration: none;
@@ -83,35 +76,24 @@ li::before{
 li:hover::before{
 
     width: 100%;
+    height: 100%;
     color: black;
 
 }
 
+a{
+    width: 100%;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
 /* ----------------Frida------------------- */
-
 .frida{
     width: 95%;
     height: 90%;
-
     position:relative;
     left:5%;
     top: 1%;
-
-}
-/* 
-.frida-title{
-    width: 38%;
-    padding:2% 0 0% 2%;
-    border-radius: 1vw 1vw 0 0 ;
-    font-size: 1.5vw;
-
-    background-color: #ffba81;
-    background-color: #fffffee0;
-     padding: 15% 0 10% 0; 
-} 
-*/
-.space-frida{
-   
 }
 .frida-box{
     width: 45%;
@@ -122,13 +104,10 @@ li:hover::before{
     animation-delay: 0.5s;
     opacity: 0%;
 }
-
-
 .frida-img{
     width:100%;
     height: 100%;
 }
-
 @keyframes slideFrida {
     from{
         opacity: 0%;
@@ -145,13 +124,18 @@ li:hover::before{
 
 main{
     width: 100%;
-    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('img/background-frida.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .frida-history{
     width: 100%;
     text-align: center;
     
-    background: #ff9a47;
+    background: #ff9a47f8;
     position: relative;
 }
 .history-text{
@@ -164,7 +148,7 @@ main{
 
     position: absolute;
     left: 56.2%;
-    bottom:55%;
+    bottom: 80%;
     z-index:4;
 
 }
@@ -181,6 +165,7 @@ main{
     color: #ff9a47;
 
 }
+
 
 @keyframes slideHist {
     from{
@@ -207,6 +192,8 @@ h1{
 .history-title{
     padding: 15% 0 3% 0;
     font-size: 2vw;
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
 }
 
 .history-text p{
@@ -222,27 +209,29 @@ h1{
 /* ----------curiosity--------- */
 .curiosity{
     width: 90%;
+
     display:flex; 
-    
     justify-content:flex-start;
     align-items: flex-end;
     position:relative;
 }
 
-.curiosity h2{
+h2{
     padding:5% 0;
     font-size: 2.5vw;
     font-family: 'Yellowtail', cursive;
     border-top: solid 0.5vh;
     border-bottom: solid 0.5vh;
     background-color: whitesmoke;
-    
+}
+h2:hover{
+    background-color: #ff9a47;
 }
 
 .container-curiosity{
     width:50%;
     margin: 0 0 5% 4% ;
-    padding: 4% 3% 5% 3%;
+    padding: 4% 3% 2% 3%;
     background-color: whitesmoke;
     border-radius: 0 0 2vw 2vw;
     
@@ -258,11 +247,11 @@ h1{
 }
 .nick-box{
     width:25%;
-    margin-bottom: 3%;
+    margin-bottom: 5%;
     position: relative;
     
     left: 12%;
-
+    z-index: 5;
 }
 .frida-ka{
     width: 100%;
@@ -281,28 +270,90 @@ h3{
 
 p{
     padding: 2% 0 3%;
-    height: 70%;
+/*     height: 70%;
+ */    font-size: 1.1vw;
 }
 
-.fa-container{
-    border-bottom: solid 0.5vh;
-
-}
-/* ----kHLO---- */
-
-.kahlo-container{
+.btn-container{
     width: 100%;
+    padding: 5%;
+    border-bottom: solid 0.5vh;
+}
+.btn-frida{
+
+    padding:2%;
+    border: none;
+    font-size: 1.2vw;
+    font-family:'Oswald', sans-serif;
+
+    border-top: solid 0.5vh;
+    border-bottom: solid 0.5vh;
+    background:transparent;
+}
+
+.btn-frida:hover{
+background-color: #ff9a47;
+}
+/*------------Obras----------*/
+.obras{
+    width: 100%;
+    display: flex;
+    padding-bottom: 5%;
+}
+.obras-container{
+    width: 48%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: whitesmoke;
-}
-
-.frida-log{
-    width: 100%;
     
 }
+.obras-boxs{
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.obras-box{
+    width: 100%;
+}
+.obras-itens{
+    width: 55%;
+}
+.obras-img{
+    width: 87%;
+    padding-right: 10%;
+}
 
-.navg{
-    width: 25%;
+.obras-img img{
+    width: 100%;
+}
+.obras-itens img{
+    width: 100%;
+}
+
+.obras-text{
+    width: 45%;
+    padding: 4%;
+    background-color: whitesmoke;
+    margin-left: 2.5%;
+    border-radius: 2vw ;
+}
+/* ----kHLO---- */
+
+footer{
+    background-image: url('img/background-frida.jpg');
+    background-size: cover;
+
+}
+.kahlo-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.log-box{
+    width: 20%;
+}
+.frida-back{
+    width: 20%;
 }

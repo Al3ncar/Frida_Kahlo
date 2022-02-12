@@ -213,7 +213,6 @@ h2:hover{
     margin-bottom: 5%;
     position: relative;
     left: 12%;
-    z-index: 5;
 }
 .frida-ka{
     width: 100%;
@@ -308,5 +307,106 @@ footer{
     width: 20%;
 }
 @media(max-width:500px){
+
+    header{
+        width: 100%;
+        height: 100%;
+    }
+    h1{
+        font-size: 15vw;
+    }
+    h2{
+        font-size:3.5vw;
+    }
+    
+    h3{
+        font-size:3vw;
+    }
+    p{
+        font-size: 2.5vw;
+    }
+    .frida{
+        display: flex;
+        align-items: flex-end;
+        top: 2vh;
+        left: 0;
+        bottom: 0;
+
+    }
+    .frida-box{
+        width: 100%;
+        height: 50%;
+        position: relative;
+        bottom: 0%;
+    }
+    .curiosity{
+        width: 100%;
+        margin-top: 5%;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-curiosity{
+        width: 90%;
+        border-radius: 2vw;
+        margin-left: 0.5%;
+    }
+    .container-curiosity h2{
+        font-size: 4.5vw;
+    }
+    .nick-box{
+        width: 50%;
+        margin-top: 100%;
+        left: 0;
+    }
+    .history-text{
+        width: 70%;
+        height: 33%;
+        position: absolute;
+        margin: 5% 0;
+        bottom: 68%;
+        left: 15%;
+    }
+    .history-text p{
+        font-size: 2.5vw;
+    }
+    .history-title{
+        font-size: 5vw;
+    }
+    .logo-box{
+        width: 40%;
+    }
+    li{
+        font-size: 2.5vw;
+    }
+    .btn-frida{
+        width: 30%;
+        font-size: 2vw;
+    }
+    .obras-img{
+        width: 100%;
+    }
+    .obras-img img{
+        width: 100%;
+        height:100%;
+    }
+    .obras-itens{
+        width: 80%;
+    }
+    .obras-itens img{
+        width: 100%;
+        height: 100%;
+    }
+    .obras-boxs{
+        width: 100%;
+    }
+    .obras-container{
+        width: 40%;
+    }
+    .obras-text{
+        width: 58%;
+        margin-right: 3%;
+    }
 
 }
